@@ -1,5 +1,8 @@
 # FalixNodes 自动重启脚本
 
+# ⭐ **觉得有用？给个 Star 支持一下！**
+> 注册地址：[https://falixnodes.net/](https://client.falixnodes.net/auth/register)
+
 自动检查并重启 FalixNodes 服务器的 GitHub Actions 脚本。支持多账号、代理、Telegram 通知等功能。
 
 ## ✨ 功能特性
