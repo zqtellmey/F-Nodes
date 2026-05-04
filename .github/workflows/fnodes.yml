@@ -152,8 +152,8 @@ jobs:
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
           HY2_URL: ${{ secrets.HY2_URL }}
         run: |
-          # 根据是否有 HY2_URL 设置代理
-          if [ -n "$HY2_URL" ]; then
+          # 根据是否有设置代理
+          if [ -n "$PROXY_NODE" ]; then
             export PROXY_SERVER="http://127.0.0.1:1080"
             echo "[INFO] 使用代理: $PROXY_SERVER"
           else
