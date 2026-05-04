@@ -150,10 +150,10 @@ jobs:
           FALIX: ${{ secrets.FALIX }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-          HY2_URL: ${{ secrets.HY2_URL }}
+          HY2_URL: ${{ secrets.PROXY_NOD }}
         run: |
           # 根据是否有设置代理
-          if [ -n "$PROXY_NODE" ]; then
+          if [ -n "$HY2_URL" ]; then
             export PROXY_SERVER="http://127.0.0.1:1080"
             echo "[INFO] 使用代理: $PROXY_SERVER"
           else
